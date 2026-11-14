@@ -1,33 +1,23 @@
 # lixus
 
-My own language model — built from first principles, in public.
+I am building my own LLM from scratch
 
-Not a wrapper. Not a fine-tune of someone else's stack as the end goal.
-A model I understand end to end: tokens → architecture → training → inference.
+tokenization architecture training inference
+all of it written and owned here
 
-## Status
+## tokens
 
-**Now:** tokenization — turning raw text into the numbers a model can learn from.
-
-**Next:** a small transformer trained from scratch on my own data.
-
-**Later:** scale it, specialize it, ship it.
-
-## Layout
-
-```
-lixus/
-├── learn/           # core build steps (the model, piece by piece)
-│   └── 01_tokens/   # vocabulary, encode / decode
-└── README.md
-```
-
-## Run
+character level vocab
+encode text to ids
+decode ids back to text
 
 ```bash
-python learn/01_tokens/tokenize.py
+python tokens/tokenize.py
 ```
 
----
+## roadmap
 
-**HAJJI-X** · building in public
+1. tokens
+2. transformer
+3. train from scratch on my data
+4. scale and specialize
